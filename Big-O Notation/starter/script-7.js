@@ -19,5 +19,5 @@ function arrayOfHiNTimes(n) {
 }
 
 // Space complexity: O(n)
-// hiArray 這個 array 的變數
+// hiArray 這個 array 的變數5
 arrayOfHiNTimes(6);

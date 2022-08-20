@@ -20,7 +20,25 @@ function findNemo(array) {
 	console.log('Call to find Nemo took ', t1 - t0);
 }
 
+function findNemo2(array) {
+	array.forEach(item => {
+		if (item === 'nemo') {
+			console.log('Found Nemo2');
+		}
+	});
+}
+
+function findNemo3(array) {
+	for (let fish of array) {
+		if (fish === 'nemo') {
+			console.log('Found Nemo3');
+		}
+	}
+}
+
 findNemo(everyone); // O(n), Linear time
+findNemo2(everyone); // O(n), Linear time
+findNemo3(everyone); // O(n), Linear time
 
 const boxes = [0, 1, 2, 3, 4, 5];
 
